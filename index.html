@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>America's Best Home Healthcare LLC — Trusted In-Home Care in Virginia</title>
+  <meta name="description" content="America's Best Home Healthcare LLC delivers Medicaid-certified in-home nursing, personal care, companion care, and waiver services across Virginia. Available 24/7." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23013A71'/%3E%3Cpath d='M26 14h12v14h14v12H38v14H26V40H12V28h14z' fill='%23EB2B5C'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ============= NAVIGATION ============= -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__brand" aria-label="America's Best Home Healthcare Home">
+        <span class="nav__brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="38" height="38">
+            <rect width="64" height="64" rx="14" fill="#013A71"/>
+            <path d="M26 14h12v14h14v12H38v14H26V40H12V28h14z" fill="#EB2B5C"/>
+            <path d="M50 14c3.5 0 5.5 2 5.5 5.5 0 5.5-9 12.5-9 12.5s-9-7-9-12.5c0-3.5 2-5.5 5.5-5.5 2 0 2.8.8 3.5 1.8.7-1 1.5-1.8 3.5-1.8z" fill="#F0BA1C"/>
+          </svg>
+        </span>
+        <span class="nav__brand-text">
+          <span class="nav__brand-line1">America's Best</span>
+          <span class="nav__brand-line2">Home Healthcare LLC</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Main Navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#waivers">Waivers</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="tel:5713986787" class="nav__cta">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>571-398-6787</span>
+        </a>
+
+        <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============= HERO ============= -->
+    <section class="hero" id="home">
+      <div class="hero__mesh" aria-hidden="true">
+        <div class="mesh-blob mesh-blob--1"></div>
+        <div class="mesh-blob mesh-blob--2"></div>
+      </div>
+
+      <div class="hero__inner">
+        <div class="hero__content">
+          <div class="hero__chip">
+            <span class="chip-pulse"></span>
+            <span>24/7 Skilled Nursing & In-Home Care · Virginia</span>
+          </div>
+
+          <h1 class="hero__title">
+            <span class="hero__line">Where Quality Care</span>
+            <span class="hero__line hero__line--accent">
+              Comes <span class="hero__typed" id="typed">Home.</span>
+            </span>
+          </h1>
+
+          <p class="hero__lede">
+            Professional skilled nursing, personal assistance, and dedicated companionship delivered with expertise, compassion, and continuous dependability for Virginia families.
+          </p>
+
+          <!-- Doccure-Style Quick Search Bar -->
+          <div class="hero-search">
+            <div class="hero-search__field">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              <select id="heroCareSelect">
+                <option value="all">Select Service Required...</option>
+                <option value="clinical">Skilled Nursing Care</option>
+                <option value="personal">Personal Care & ADL</option>
+                <option value="specialized">Specialized ID / Autism Support</option>
+                <option value="training">CPR / BLS Training Classes</option>
+              </select>
+            </div>
+            <div class="hero-search__field">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 00-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 00-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+              <input type="text" value="Virginia (Statewide Care)" readonly />
+            </div>
+            <button class="hero-search__btn" id="heroSearchBtn">
+              <span>Find Care</span>
+            </button>
+          </div>
+
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary">
+              <span>Schedule Free Consultation</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#services" class="btn btn--ghost">Explore Care Services</a>
+          </div>
+
+          <div class="hero__trust">
+            <div class="trust-item">
+              <div class="trust-num"><span data-count="24">0</span>/7</div>
+              <div class="trust-label">On-Call Support</div>
+            </div>
+            <div class="trust-sep"></div>
+            <div class="trust-item">
+              <div class="trust-num"><span data-count="100">0</span>%</div>
+              <div class="trust-label">Licensed & Insured</div>
+            </div>
+            <div class="trust-sep"></div>
+            <div class="trust-item">
+              <div class="trust-num"><span data-count="20">0</span>+</div>
+              <div class="trust-label">Years Experience</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doccure-Style Interactive Photo Stack -->
+        <div class="hero__visual" id="heroVisual">
+          <div class="hero__image-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1000&q=80" 
+              alt="Caregiver smiling with senior woman in home setting" 
+              class="hero__main-img" 
+              loading="eager"
+            />
+            <div class="hero__img-overlay"></div>
+
+            <!-- Doccure Card 1: Rating -->
+            <div class="doccure-card doccure-card--top">
+              <div class="doccure-card__badge">Verified Provider</div>
+              <div class="doccure-card__stars">★★★★★</div>
+              <div class="doccure-card__title">5-Star Rated Care</div>
+              <div class="doccure-card__sub">Trusted by 500+ Families</div>
+            </div>
+
+            <!-- Doccure Card 2: Nurse Status -->
+            <div class="doccure-card doccure-card--bottom">
+              <div class="doccure-card__status">
+                <span class="status-dot"></span>
+                <span>Licensed RNs & LPNs</span>
+              </div>
+              <div class="doccure-card__title">Medical Skilled Nursing</div>
+            </div>
+
+            <!-- Doccure Card 3: Medicaid Certified -->
+            <div class="doccure-card doccure-card--side">
+              <div class="doccure-card__icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2L15 8.5 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 9 8.5z"/></svg>
+              </div>
+              <div>
+                <div class="doccure-card__title">Medicaid Certified</div>
+                <div class="doccure-card__sub">Waiver Programs Accepted</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= MARQUEE ============= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Skilled Nursing Care</span><span class="dot">●</span>
+        <span>Personal Assistance</span><span class="dot">●</span>
+        <span>Companion Services</span><span class="dot">●</span>
+        <span>24/7 Live-In Care</span><span class="dot">●</span>
+        <span>Intellectual Disability & Autism Support</span><span class="dot">●</span>
+        <span>Housekeeping & ADL Assistance</span><span class="dot">●</span>
+        <span>CPR / First Aid / BLS Classes</span><span class="dot">●</span>
+        <span>Respite Care</span><span class="dot">●</span>
+        <!-- Duplicated loop set -->
+        <span>Skilled Nursing Care</span><span class="dot">●</span>
+        <span>Personal Assistance</span><span class="dot">●</span>
+        <span>Companion Services</span><span class="dot">●</span>
+        <span>24/7 Live-In Care</span><span class="dot">●</span>
+        <span>Intellectual Disability & Autism Support</span><span class="dot">●</span>
+        <span>Housekeeping & ADL Assistance</span><span class="dot">●</span>
+        <span>CPR / First Aid / BLS Classes</span><span class="dot">●</span>
+        <span>Respite Care</span><span class="dot">●</span>
+      </div>
+    </div>
+
+    <!-- ============= ABOUT ============= -->
+    <section class="section section--about" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__media" data-reveal="left">
+            <div class="about__image-frame">
+              <img 
+                src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=900&q=80" 
+                alt="Healthcare provider holding hands with elderly patient" 
+                class="about__img" 
+                loading="lazy"
+              />
+            </div>
+            <div class="about__badge">
+              <div class="about__badge-num">20+</div>
+              <div class="about__badge-text">Years Serving<br/>Virginia Families</div>
+            </div>
+          </div>
+
+          <div class="about__content" data-reveal="right">
+            <div class="eyebrow">About Our Agency</div>
+            <h2 class="section__title">Professional Medical Care. <span>Delivered at Home.</span></h2>
+            <p>
+              At <strong>America's Best Home Healthcare LLC</strong>, we believe every individual deserves high-caliber, compassionate medical care in the comfort and security of their own home.
+            </p>
+            <p>
+              Our multidisciplinary healthcare team delivers customized care strategies designed around your family's dynamic. Whether providing specialized nursing procedures or non-clinical daily assistance, we hold ourselves to rigorous clinical standards.
+            </p>
+
+            <div class="about__pillars">
+              <div class="pillar">
+                <div class="pillar__icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <div>
+                  <div class="pillar__title">Clinical Excellence</div>
+                  <div class="pillar__text">Licensed RNs & LPNs focused on patient health & recovery.</div>
+                </div>
+              </div>
+              <div class="pillar">
+                <div class="pillar__icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <div class="pillar__title">Vetted Professionals</div>
+                  <div class="pillar__text">Fully insured, background-checked caregivers you can rely on.</div>
+                </div>
+              </div>
+              <div class="pillar">
+                <div class="pillar__icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="8" r="5"/><path d="M3 22a9 9 0 0 1 18 0"/></svg>
+                </div>
+                <div>
+                  <div class="pillar__title">Dignity First</div>
+                  <div class="pillar__text">Respectful daily assistance tailored to personal independence.</div>
+                </div>
+              </div>
+              <div class="pillar">
+                <div class="pillar__icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+                </div>
+                <div>
+                  <div class="pillar__title">In-Home Comfort</div>
+                  <div class="pillar__text">Enabling long-term healing and independence at home.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= SERVICES ============= -->
+    <section class="section section--services" id="services">
+      <div class="container">
+        <div class="section__head" data-reveal="up">
+          <div class="eyebrow eyebrow--light">Our Services</div>
+          <h2 class="section__title section__title--light">Comprehensive In-Home <span>Healthcare Solutions</span></h2>
+          <p class="section__lede">
+            Our care coordinators organize specialized treatment plans adapted to client requirements—combining medical nursing, personal daily assistance, and specialized support.
+          </p>
+
+          <!-- Doccure Style Category Pills -->
+          <div class="services-tabs" role="tablist" aria-label="Service categories">
+            <button class="tab-btn active" role="tab" aria-selected="true" data-category="all">All Services</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-category="clinical">Clinical Nursing</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-category="personal">Personal Care & ADL</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-category="specialized">Specialized Support</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-category="training">Certifications</button>
+          </div>
+        </div>
+
+        <div class="services__grid">
+          <!-- Card 1 -->
+          <div class="service" data-category="clinical" data-reveal="up">
+            <div class="service__top">
+              <div class="service__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <span class="service__tag">Available 24/7</span>
+            </div>
+            <h3>Skilled Nursing</h3>
+            <p>In-home medical care delivered by Registered Nurses (RNs) and Licensed Practical Nurses (LPNs).</p>
+            <a href="#contact" class="service__link">Inquire Service →</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service" data-category="personal" data-reveal="up">
+            <div class="service__top">
+              <div class="service__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg>
+              </div>
+              <span class="service__tag">Personal Care</span>
+            </div>
+            <h3>Personal Care</h3>
+            <p>Attentive personal care assistance with bathing, dressing, grooming, hygiene, and daily routines.</p>
+            <a href="#contact" class="service__link">Inquire Service →</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service" data-category="personal" data-reveal="up">
+            <div class="service__top">
+              <div class="service__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+              </div>
+              <span class="service__tag">Full Time</span>
+            </div>
+            <h3>24/7 Live-In Care</h3>
+            <p>Continuous round-the-clock home care giving safety, assistance, and complete caregiver peace of mind.</p>
+            <a href="#contact" class="service__link">Inquire Service →</a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="service" data-category="personal" data-reveal="up">
+            <div class="service__top">
+              <div class="service__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <span class="service__tag">Direct Care</span>
+            </div>
+            <h3>Personal Care Aides</h3>
+            <p>Qualified healthcare aides delivering hands-on support tailored around dignity and patient safety.</p>
+            <a href="#contact" class="service__link">Inquire Service →</a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="service" data-category="personal" data-reveal="up">
+            <div class="service__top">
+              <div class="service__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <span class="service__tag">Daily Support</span>
+            </div>
+            <h3>ADL Assistance</h3>
+            <p>Targeted help with Activities of Daily Living—mobility, transfer, meal support, and personal hygiene.</p>
+            <a href="#contact" class="service__link">Inquire Service →</a>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="service" data-category="specialized" data-reveal="up">
+            <div class="service__top">
+              <div class="service__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2v6m0 8v6m10-10h-6M8 12H2"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <span class="service__tag">Specialized</span>
+            </div>
+            <h3>Autism & ID Care</h3>
+            <p>Specialized assistance plans supporting individuals with intellectual and developmental needs.</p>
+            <a href="#contact" class="service__link">Inquire Service →</a>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="service" data-category="personal" data-reveal="up">
+            <div class="service__top">
+              <div class="service__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+              </div>
+              <span class="service__tag">Home Care</span>
+            </div>
+            <h3>Housekeeping Assistance</h3>
+            <p>Maintaining a clean, safe, and organized home environment through meal preparation and light house chores.</p>
+            <a href="#contact" class="service__link">Inquire Service →</a>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="service" data-category="personal" data-reveal="up">
+            <div class="service__top">
+              <div class="service__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <span class="service__tag">Social Care</span>
+            </div>
+            <h3>Companion Services</h3>
+            <p>Engaging social interaction, recreational support, and daily companionship to eliminate isolation.</p>
+            <a href="#contact" class="service__link">Inquire Service →</a>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="service" data-category="specialized" data-reveal="up">
+            <div class="service__top">
+              <div class="service__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </div>
+              <span class="service__tag">Family Relief</span>
+            </div>
+            <h3>Respite Care</h3>
+            <p>Flexible short-term relief for family caregivers, ensuring uninterrupted quality care for your loved one.</p>
+            <a href="#contact" class="service__link">Inquire Service →</a>
+          </div>
+
+          <!-- Card 10 -->
+          <div class="service service--accent" data-category="training" data-reveal="up">
+            <div class="service__top">
+              <div class="service__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+              </div>
+              <span class="service__tag service__tag--gold">Certified Course</span>
+            </div>
+            <h3>CPR / First Aid / AED</h3>
+            <p>Professional certifications for medical staff, primary caregivers, and community members.</p>
+            <a href="#contact" class="service__link">Enroll Class →</a>
+          </div>
+
+          <!-- Card 11 -->
+          <div class="service service--accent" data-category="training" data-reveal="up">
+            <div class="service__top">
+              <div class="service__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <span class="service__tag service__tag--gold">BLS Course</span>
+            </div>
+            <h3>BLS Certification</h3>
+            <p>Basic Life Support (BLS) training programs designed for healthcare professionals.</p>
+            <a href="#contact" class="service__link">Enroll Class →</a>
+          </div>
+
+          <!-- Card 12 -->
+          <div class="service service--accent" data-category="training" data-reveal="up">
+            <div class="service__top">
+              <div class="service__icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+              </div>
+              <span class="service__tag service__tag--gold">Career Path</span>
+            </div>
+            <h3>PCA Training Program</h3>
+            <p>State-approved Personal Care Aide training courses for individuals entering home care professions.</p>
+            <a href="#contact" class="service__link">Enroll Class →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= WAIVERS ============= -->
+    <section class="section section--waivers" id="waivers">
+      <div class="container">
+        <div class="section__head" data-reveal="up">
+          <div class="eyebrow">Insurance & Medicaid Options</div>
+          <h2 class="section__title">Medicaid Certified & Waiver Support</h2>
+          <p class="section__lede">
+            We are fully <strong>Medicaid Certified</strong> in Virginia and navigate major insurance programs, private policies, and consumer-directed coverage options.
+          </p>
+        </div>
+
+        <div class="waivers__grid">
+          <div class="waiver" data-reveal="up">
+            <div class="waiver__check">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>Technology Assisted Waiver</h3>
+            <p>Specialized assistance for individuals dependent on medical technology devices at home.</p>
+          </div>
+
+          <div class="waiver" data-reveal="up">
+            <div class="waiver__check">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>Intellectual Disabilities Waiver</h3>
+            <p>Customized care supports aiding community inclusion and home-based living.</p>
+          </div>
+
+          <div class="waiver" data-reveal="up">
+            <div class="waiver__check">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>IFDDS Waiver</h3>
+            <p>Developmental Disabilities Support services accommodating pediatric and adult individuals.</p>
+          </div>
+
+          <div class="waiver" data-reveal="up">
+            <div class="waiver__check">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>Consumer Direction Waiver</h3>
+            <p>Enabling clients and families to direct schedules, care plans, and preferred staff.</p>
+          </div>
+
+          <div class="waiver" data-reveal="up">
+            <div class="waiver__check">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>EPSDT Services</h3>
+            <p>Early Screening, Diagnostic, and Treatment programs designated for pediatric care needs.</p>
+          </div>
+
+          <div class="waiver waiver--cta" data-reveal="up">
+            <h3>Need Waiver Assistance?</h3>
+            <p>Our care management team will guide you through application details free of charge.</p>
+            <a href="tel:5713986787" class="btn btn--gold">
+              <span>Speak with a Coordinator</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= WHY US ============= -->
+    <section class="section section--why" id="why">
+      <div class="container">
+        <div class="section__head" data-reveal="up">
+          <div class="eyebrow">Why Choose America's Best</div>
+          <h2 class="section__title">Our Commitment to Excellence</h2>
+        </div>
+
+        <div class="why__grid">
+          <div class="why-card" data-reveal="up">
+            <div class="why-card__num">01</div>
+            <h3>Compassionate Focus</h3>
+            <p>We treat every client with warmth and personal attention, ensuring clear communication with families at every step.</p>
+          </div>
+
+          <div class="why-card" data-reveal="up">
+            <div class="why-card__num">02</div>
+            <h3>Verified Expertise</h3>
+            <p>Our care team undergoes rigorous screening, clinical evaluations, and ongoing training to ensure patient safety.</p>
+          </div>
+
+          <div class="why-card" data-reveal="up">
+            <div class="why-card__num">03</div>
+            <h3>24/7 Availability</h3>
+            <p>Health decisions don't follow office hours. Our registered nurses and administrators remain accessible day or night.</p>
+          </div>
+
+          <div class="why-card" data-reveal="up">
+            <div class="why-card__num">04</div>
+            <h3>Tailored Care Plans</h3>
+            <p>We adapt care options around specific client routines, medical needs, and cultural preferences.</p>
+          </div>
+        </div>
+
+        <div class="quote" data-reveal="up">
+          <div class="quote__image-bg">
+            <img src="https://images.unsplash.com/photo-1581579438747-1dc8d1e292c7?auto=format&fit=crop&w=1200&q=80" alt="Caregiver comforting patient" />
+            <div class="quote__overlay"></div>
+          </div>
+          <div class="quote__content">
+            <svg class="quote__mark" viewBox="0 0 24 24" width="40" height="40" fill="currentColor"><path d="M7 7h4v4H8c0 2 1 3 3 3v2c-3 0-5-2-5-5zm9 0h4v4h-3c0 2 1 3 3 3v2c-3 0-5-2-5-5z"/></svg>
+            <p>"We deliver care with the same dedication, patience, and dignity that we demand for our own families."</p>
+            <div class="quote__cite">— The Standard at America's Best Home Healthcare</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= CONTACT ============= -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info" data-reveal="left">
+            <div class="eyebrow eyebrow--light">Get in Touch</div>
+            <h2 class="section__title section__title--light">Let's Discuss Your <span>Home Care Needs</span></h2>
+            <p class="contact__lede">
+              Have questions regarding care, insurance waivers, or scheduling? Contact our administrative team for a complimentary consultation.
+            </p>
+
+            <div class="contact__items">
+              <a class="contact__item" href="tel:5713986787">
+                <div class="contact__item-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <div class="contact__item-label">Main Line</div>
+                  <div class="contact__item-value">571-398-6787</div>
+                </div>
+              </a>
+
+              <a class="contact__item" href="tel:7039896806">
+                <div class="contact__item-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <div class="contact__item-label">Direct Line</div>
+                  <div class="contact__item-value">703-989-6806</div>
+                </div>
+              </a>
+
+              <a class="contact__item" href="mailto:info@americasbesthhc.com">
+                <div class="contact__item-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <div class="contact__item-label">Email</div>
+                  <div class="contact__item-value">info@americasbesthhc.com</div>
+                </div>
+              </a>
+
+              <div class="contact__item">
+                <div class="contact__item-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <div class="contact__item-label">Office Address</div>
+                  <div class="contact__item-value">14511-A Jefferson Davis Hwy<br/>Woodbridge, VA 22191</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact__form" id="contactForm" data-reveal="right" novalidate>
+            <h3>Schedule a Free Consultation</h3>
+            
+            <div class="form__row">
+              <div class="form__field">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="Jane Doe" />
+                <span class="field-error">Please enter your name</span>
+              </div>
+              <div class="form__field">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="(703) 000-0000" />
+                <span class="field-error">Valid phone number required</span>
+              </div>
+            </div>
+
+            <div class="form__field">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="name@example.com" />
+              <span class="field-error">Valid email address required</span>
+            </div>
+
+            <div class="form__field">
+              <label for="careType">Requested Care Service</label>
+              <select id="careType" name="careType">
+                <option value="Skilled Nursing">Skilled Nursing</option>
+                <option value="Personal Care">Personal Care</option>
+                <option value="Live-In Care">24/7 Live-In Care</option>
+                <option value="Companion Service">Companion Services</option>
+                <option value="Respite Care">Respite Care</option>
+                <option value="Autism / ID Care">Specialized ID / Autism Support</option>
+                <option value="Medicaid Waiver">Medicaid Waiver Information</option>
+                <option value="Certification Class">CPR / BLS / PCA Classes</option>
+              </select>
+            </div>
+
+            <div class="form__field">
+              <label for="message">Care Details or Questions</label>
+              <textarea id="message" name="message" rows="4" placeholder="How can our healthcare team assist you?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              <span>Submit Request</span>
+            </button>
+
+            <div class="form__ok" id="formOk" role="alert">
+              Thank you. Our care team will review your message and contact you within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============= FOOTER ============= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <svg viewBox="0 0 64 64" width="36" height="36">
+            <rect width="64" height="64" rx="12" fill="#EB2B5C"/>
+            <path d="M26 14h12v14h14v12H38v14H26V40H12V28h14z" fill="#ffffff"/>
+          </svg>
+          <div>
+            <div class="footer__name">America's Best</div>
+            <div class="footer__sub">Home Healthcare LLC</div>
+          </div>
+        </div>
+        <p>
+          Dedicated in-home skilled nursing, daily personal care, and Medicaid waiver support across Virginia—24 hours a day, 365 days a year.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Care Services</h4>
+        <a href="#services">Skilled Nursing</a>
+        <a href="#services">Personal Assistance</a>
+        <a href="#services">24/7 Live-In Care</a>
+        <a href="#services">Companion Services</a>
+        <a href="#services">Respite Support</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Waiver Programs</h4>
+        <a href="#waivers">Tech Assisted Waiver</a>
+        <a href="#waivers">Intellectual Disability (ID)</a>
+        <a href="#waivers">IFDDS Waiver Support</a>
+        <a href="#waivers">Consumer Direction</a>
+        <a href="#waivers">EPSDT Program</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact Info</h4>
+        <a href="tel:5713986787">Main: 571-398-6787</a>
+        <a href="tel:7039896806">Direct: 703-989-6806</a>
+        <a href="mailto:info@americasbesthhc.com">info@americasbesthhc.com</a>
+        <p class="footer__addr">14511-A Jefferson Davis Hwy<br/>Woodbridge, VA 22191</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© 2026 America's Best Home Healthcare LLC. All rights reserved.</span>
+        <span>Licensed, Bonded & Insured in Virginia.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
